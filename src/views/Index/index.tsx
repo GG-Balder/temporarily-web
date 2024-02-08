@@ -2,6 +2,9 @@ import { SMALL_SCREEN } from '@/utils/constant';
 import { useSize } from 'ahooks';
 import Background from './components/Background';
 import CountDown from './components/CountDown';
+
+import { useRouter } from 'next/router';
+
 import {
   StyledContainer,
   StyledDesc,
@@ -49,7 +52,7 @@ const svgX = (
 
 const Index = function () {
   const size = useSize(window?.document?.getElementsByTagName('html')[0])
-  
+  const router = useRouter()
   return (
     <StyledWrapper>
       <Background />
@@ -62,7 +65,7 @@ const Index = function () {
           <StyledDescText style={{ color: '#EBF479' }}> 17th February, 2024</StyledDescText>
         </StyledDesc>
         <CountDown />
-        <StyledFooter>
+        <StyledFooter href="https://twitter.com/DapDapMeUp">
           For more updates, follow our {svgX}
         </StyledFooter>
       </StyledContainer>

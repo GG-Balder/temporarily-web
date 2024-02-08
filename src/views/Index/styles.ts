@@ -41,7 +41,7 @@ export const StyledDescText = styled.div`
     line-height: 161.2%; 
   }
 `
-export const StyledFooter = styled.div`
+export const StyledFooter = styled.a`
   position: absolute;
   left: 50%;
   bottom: 42px;
@@ -54,6 +54,9 @@ export const StyledFooter = styled.div`
   font-style: normal;
   font-weight: 500;
   line-height: 161.2%;
+  text-decoration: unset;
+  vertical-align: middle;
+  cursor: pointer;
   @media (max-width: ${SMALL_SCREEN}) {
     width: 140px;
     font-size: 16px;

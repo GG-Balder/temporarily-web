@@ -7,7 +7,7 @@ export const StyledWrapper = styled.div`
 `
 export const StyledContainer = styled.div`
   position: relative;
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;

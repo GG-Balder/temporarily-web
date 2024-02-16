@@ -25,7 +25,7 @@ const Index = function () {
     handleStartCountDown()
   }
   const handleStartCountDown = function () {
-    const times: number = (Number(new Date('2024-02-17 00:00:00')) - Number(new Date())) / 1000
+    const times: number = (Number(new Date('2024-02-17 09:00:00')) - Number(new Date())) / 1000
     getDaysHorsMinus(times)
     timerRef.current = setTimeout(() => {
       if (times > 0) handleStartCountDown()
